@@ -1,29 +1,12 @@
-# Setup Instructions
+# Dependencies
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/niro4-1/cli-tool.git
-   cd cli-tool
-   ```
+- List all necessary dependencies here, including versions if applicable.
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+# Windows CI Configuration Steps
 
-3. **Run the tool:**
-   ```bash
-   npm start
-   ```
+1. Install dependencies specific to Windows CI.
+2. Set environment variables as needed.
+3. Configure the CI tool (e.g., GitHub Actions, Travis CI).
+4. Run the CI pipeline to ensure everything is set up correctly.
 
-4. **For more options, check the documentation.**
-
-# Windows CI Instructions
-
-To set up Windows CI for this project, follow these steps:
-
-1. Install necessary dependencies.
-2. Configure the CI environment.
-3. Run tests and build the project.
-
-For detailed instructions, refer to the official documentation.
+For more detailed instructions, refer to the official CI documentation.
