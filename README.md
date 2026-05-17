@@ -12,7 +12,10 @@ To set up Windows CI for this project, follow these steps:
 
 For more detailed instructions, refer to the official CI documentation.
 
-// Code changes to prevent cache mutation in dry-run mode.
-function dryRun() {
-    // Implementation that ensures cache remains unchanged.
-}
+## Error Handling Steps
+
+1. Validate input data before processing.
+2. Use try-catch blocks to handle exceptions gracefully.
+3. Log error messages for debugging purposes.
+4. Provide user-friendly error messages when failures occur.
+5. Implement retry logic for transient errors where applicable.
