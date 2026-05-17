@@ -1,8 +1,9 @@
-# Dependencies
+# cli-tool
+Cross-platform CLI utility for batch file transformations.
 
-- List all necessary dependencies here, including versions if applicable.
+# Windows CI Instructions
 
-# Windows CI Configuration Steps
+To set up Windows CI for this project, follow these steps:
 
 1. Install dependencies specific to Windows CI.
 2. Set environment variables as needed.
