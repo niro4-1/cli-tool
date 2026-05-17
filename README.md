@@ -1,29 +1,19 @@
-# Setup Instructions
+# Progress Bars
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/niro4-1/cli-tool.git
-   cd cli-tool
-   ```
+For long-running operations, you can implement progress bars to enhance user experience. Consider using libraries like `progress` or `ora` to display progress in the terminal.
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+## Example
 
-3. **Run the tool:**
-   ```bash
-   npm start
-   ```
+```javascript
+const ProgressBar = require('progress');
 
-4. **For more options, check the documentation.**
+const bar = new ProgressBar(':bar', { total: 100 });
 
-# Windows CI Instructions
-
-To set up Windows CI for this project, follow these steps:
-
-1. Install necessary dependencies.
-2. Configure the CI environment.
-3. Run tests and build the project.
-
-For detailed instructions, refer to the official documentation.
+const timer = setInterval(() => {
+  bar.tick();
+  if (bar.complete) {
+    clearInterval(timer);
+    console.log('Done!');
+  }
+}, 100);
+```
