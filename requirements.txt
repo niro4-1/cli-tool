@@ -1,0 +1,3 @@
+# Updated dependencies
+package1>=latest_version
+package2>=latest_version
