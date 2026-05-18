@@ -1,0 +1,4 @@
+# Updated dependencies
+
+- tqdm: latest version
+- other-dependency: latest version
