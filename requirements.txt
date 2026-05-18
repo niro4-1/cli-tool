@@ -1,4 +1,3 @@
 # Updated dependencies
-
-- tqdm: latest version
-- other-dependency: latest version
+package1>=latest_version
+package2>=latest_version
