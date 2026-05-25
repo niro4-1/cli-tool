@@ -1,15 +1,27 @@
 ## Windows CI Setup
 
 ### Dependencies
-- **Windows Dependency 1**: Explain the specific requirements for Windows CI.
-- **Windows Dependency 2**: Describe any additional tools or libraries needed.
+- **Windows Dependency 1**: Ensure you have the latest version of [Dependency 1] installed.
+- **Windows Dependency 2**: Install [Dependency 2] via [installation instructions].
 
 ### Environment Variables
-- **WINDOWS_ENV_VAR_1**: Define its purpose in the Windows context.
-- **WINDOWS_ENV_VAR_2**: Explain any Windows-specific configurations.
+- **WINDOWS_ENV_VAR_1**: This variable is required for [specific purpose].
+- **WINDOWS_ENV_VAR_2**: Configure this variable to [specific configuration].
 
 ### CI Tool Configuration
-- Detail any Windows-specific configurations for CI tools like GitHub Actions or Azure Pipelines.
+- For GitHub Actions, add the following to your workflow file:
+```yaml
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup
+        run: | 
+          echo "Setting up environment..."
+```
 
 ### Running the CI Pipeline
-- Provide instructions on how to run the CI pipeline on Windows and any troubleshooting tips.
+- To run the CI pipeline on Windows, execute the following command: `your-command-here`. 
+- If you encounter issues, check the logs for errors related to [common issues].
