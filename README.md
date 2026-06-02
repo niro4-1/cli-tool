@@ -22,6 +22,17 @@ def exponential_backoff_with_jitter(retries):
         # Attempt the operation here
 ```
 
+### Usage Example:
+To use the `exponential_backoff_with_jitter` function, call it with the number of retries you want to attempt. For example:
+```python
+for attempt in range(5):
+    try:
+        # Your operation here
+        break  # Exit loop on success
+    except Exception:
+        exponential_backoff_with_jitter(attempt)
+```
+
 This approach balances the load on the server and increases the chances of success on subsequent attempts.
 
 # Dependency Update
