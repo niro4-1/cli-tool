@@ -23,3 +23,7 @@ def exponential_backoff_with_jitter(retries):
 ```
 
 This approach balances the load on the server and increases the chances of success on subsequent attempts.
+
+# Dependency Update
+
+The exponential backoff dependency has been updated to the latest version for improved performance and reliability.
