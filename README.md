@@ -1,40 +1,18 @@
-## Exponential Backoff with Jitter
+## Usage Instructions
 
-Exponential backoff is a standard error-handling strategy for network applications in which the client increases the wait time between retries exponentially. Adding jitter helps to prevent thundering herd problems by randomizing the wait time.
+To use the CLI tool, install the required dependencies and run the following command:
 
-### Implementation Steps:
-1. **Initial Delay**: Start with a base delay (e.g., 100ms).
-2. **Exponential Increase**: After each failure, double the delay.
-3. **Add Jitter**: Randomly adjust the delay to a range (e.g., +/- 20% of the current delay).
-4. **Retry**: Attempt the operation again after the calculated delay.
-
-### Example Code:
-```python
-import random
-import time
-
-def exponential_backoff_with_jitter(retries):
-    base_delay = 0.1  # 100ms
-    for i in range(retries):
-        delay = base_delay * (2 ** i)
-        jitter = delay * 0.2 * random.uniform(-1, 1)
-        time.sleep(delay + jitter)
-        # Attempt the operation here
+```bash
+python cli_tool.py [options]
 ```
 
-### Usage Example:
-To use the `exponential_backoff_with_jitter` function, call it with the number of retries you want to attempt. For example:
-```python
-for attempt in range(5):
-    try:
-        # Your operation here
-        break  # Exit loop on success
-    except Exception:
-        exponential_backoff_with_jitter(attempt)
-```
+Replace `[options]` with the appropriate flags and arguments for your use case.
 
-This approach balances the load on the server and increases the chances of success on subsequent attempts.
+## Contribution Guidelines
 
-# Dependency Update
+1. **Fork the Repository**: Create a personal fork of the repository.
+2. **Create a Branch**: Make a new branch for your feature or bug fix.
+3. **Make Changes**: Implement your changes and ensure they are well-tested.
+4. **Submit a Pull Request**: Push your branch and submit a pull request for review.
 
-The exponential backoff dependency has been updated to the latest version for improved performance and reliability.
+Please ensure your code adheres to the project's coding standards and includes relevant documentation.
