@@ -6,6 +6,7 @@ A command-line interface tool for managing configurations and other tasks.
 - Configuration parsing
 - Error message improvements
 - Windows CI setup
+- Deep-merge behavior for nested configuration objects
 
 ## Getting Started
 
