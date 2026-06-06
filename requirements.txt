@@ -1,3 +1,1 @@
-# Updated relevant dependency
-relevant-package>=latest_version
-metrics-library>=latest_version
+tomllib==0.5.0
