@@ -59,3 +59,7 @@ cli deploy
 
 #### Options
 - `--env`: Specify the environment to deploy to (e.g., `dev`, `prod`).
+
+## Progress Bar
+
+A progress bar is displayed during long-running operations such as `build` and `test` to provide visual feedback on the operation's progress.
