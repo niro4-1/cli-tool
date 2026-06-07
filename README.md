@@ -37,3 +37,7 @@ The CLI tool will read the configuration file and use the values to configure th
 - When using the `dry-run` mode, the tool will simulate actions without making any changes to the system.
 - The `.cache` directory is used to store temporary data and can be safely deleted if needed.
 - When merging nested dictionaries, the CLI tool will recursively merge the values, with values from the latter dictionary taking precedence over the former.
+
+## Contributing
+
+We welcome contributions! Please see our CONTRIBUTING.md file for more information.
